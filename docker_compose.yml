@@ -1,0 +1,9 @@
+version: "3.10"
+
+services:
+  bot:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - .:/app
+
